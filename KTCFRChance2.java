@@ -137,12 +137,9 @@ public class KTCFRChance2 {
         }
          
         nodecount = nodecount + 1;
-        if (currit == iterations) {
-          itf=itf+1;
-        }
     if ((nodecount % 1000000) == 0)
       System.out.println("nodecount: " + nodecount);
-    if ((itf==1) || (nodecount == 32) || (nodecount == 64) || (nodecount == 128) || (nodecount == 256) || (nodecount == 512) || (nodecount == 1024) || (nodecount == 2048) || (nodecount == 4096) || (nodecount == 8192) || (nodecount == 16384) || (nodecount == 32768) || (nodecount == 65536) || (nodecount == 131072) || (nodecount == 262144) || (nodecount == 524288) || (nodecount == 1048576) || (nodecount == 2097152) || (nodecount == 4194304) || (nodecount == 8388608) || (nodecount == 16777216) || (nodecount == 33554432) || (nodecount == 67108864) || (nodecount == 134217728) || (nodecount == 268435456)  || (nodecount == 536870912) || (nodecount == 1073741824) || (nodecount == 2147483648l) || (nodecount == 4294967296l) || (nodecount == 8589934592l) || (nodecount == 17179869184l) || (nodecount == 100000) || (nodecount == 1000000) || (nodecount == 10000000) || (nodecount == 100000000) || (nodecount == 1000000000)  || (nodecount % 100000000)==0) {//|| (nodecount == 10000000000)) {
+    if ((nodecount == 32) || (nodecount == 64) || (nodecount == 128) || (nodecount == 256) || (nodecount % 10000000)==0) {
         //triggers on powers of 2 to run the best response function to check exploitability 
          double[] oppreach = new double[decksize];
          double br0 = 0;
